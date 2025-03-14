@@ -9,7 +9,7 @@ export const getTodos = async (req: Request, res: Response) => {
     return res.status(200).json({
       message: "get todos successfully",
       success: true,
-      todo: newTodo.rows,
+      todos: newTodo.rows,
     });
   } catch (error: any) {
     console.error("error on get todos", error.messsage || error);
